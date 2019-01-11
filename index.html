@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <script src="public/bundle.js"></script> -->
+    <script>
+    (async () => {
+      try {
+        console.log(111)
+        const ret = await fetch("http://localhost:3000/test.php", {
+          mode: 'cors'
+        });
+        const text = await ret.json();
+        console.log(text);
+      } catch (err) {
+        console.error(err);
+      }
+      
+
+    })();
+    </script>
+  </head>
+  <body>
+    aaa
+  </body>
+</html>
